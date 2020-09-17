@@ -1,7 +1,7 @@
 import React from 'react';
 import AppHeader from './AppHeader';
 import AppBody from './AppBoby';
-import AppFooter from './AppFooter';
+// import AppFooter from './AppFooter';
 import './App.css';
 
 function App() {
@@ -9,7 +9,7 @@ function App() {
     <div className="App">
       <AppHeader />
       <AppBody />
-      <AppFooter />
+      {/* <AppFooter /> */}
     </div>
   );
 }

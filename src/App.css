@@ -1,8 +1,29 @@
+.App {
+  width: 100%;
+  height: 4000px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .App-header {
   width: 100%;
   height: 100px;
   background-color: aquamarine;
-  position: fixed !important;
+  position: fixed;
 }
 
+.body {
+  padding-top: 100px;
+  width: 80%;
+  height: 3500px;
+}
 
+.FilmPopular {
+  width: 80%;
+  height: 200px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: auto;
+  border: 3px solid gray;
+}

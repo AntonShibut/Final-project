@@ -19,11 +19,24 @@
   height: 3500px;
 }
 
-.FilmPopular {
-  width: 80%;
-  height: 200px;
+.ContainerForFilmsPopular {
   margin-top: 10px;
   margin-left: auto;
   margin-right: auto;
-  border: 3px solid gray;
+  
+}
+
+.FilmsPopular {
+  width: 1009px;
+  display: flex;
+  overflow: hidden;
+  background-color: white;
+  border: 2px solid white;
+  border-radius: 1em;
+}
+
+.Film {
+  margin: auto;
+  margin-right: 2px;
+  
 }

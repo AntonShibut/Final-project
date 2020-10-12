@@ -1,10 +1,10 @@
 import React from "react";
-import FilmPopular from './AppFilmPopular.js';
+import FilmsPopular from './AppFilmsPopular';
 
 export default function AppBody() {
     return (<div className='body'>
-                <div className='FilmPopular'>
-                    <FilmPopular /> 
+                <div className='ContainerForFilmsPopular'>
+                    <FilmsPopular /> 
                 </div>
     </div>
     );

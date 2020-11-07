@@ -2,11 +2,10 @@ import React from 'react';
 import axios from 'axios';
 import Film from './MovieItems';
 
-export default class FilmsPopular extends React.Component {
+export default class Movie extends React.Component {
     state = {
         films: []
     }
-
 
     componentDidMount = () => {
         axios.get(`https://api.themoviedb.org/3/movie/popular?api_key=8108e5a227c6f1625aff06ec7f3a826a&language=ru&page=1`)
@@ -17,25 +16,25 @@ export default class FilmsPopular extends React.Component {
             })
     }
 
-    const Films = [this.state.films.map((film, index) => {
-        return (
-             <Film
-            key = {index}
-            title = {film.title}
-            image = {film.poster_path}
-            />
-        )
-    })  ]
-
-
  
-
     render() {
+        const FilmTopLine = this.state.films.map((film, index) => {
+            return (
+                 <Film
+                key = {index}
+                title = {film.title}
+                image = {film.poster_path}
+                />
+            )
+        })  
+
+        
+
         return (
-            <div className = 'FilmsPopular'>
-                {Film}
+            <div className = 'FilmsPopular_topLine'>
+                {FilmTopLine}
             </div>
-        )
+        );
     }
 }
 
